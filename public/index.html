@@ -423,7 +423,7 @@
                            style="text-shadow: 1px 1px 30px , 1px 1px 20px rgba(183, 135, 0, 0.1), 1px 1px 20px rgba(183, 135, 0, 0.1); display: block;">New Way</strong>
                         </div>
                         <span class="text-white opacity-6 "
-                        style="text-shadow: 1px 1px 30px , 1px 1px 20px rgba(183, 135, 0, 0.1), 1px 1px 20px rgba(183, 135, 0, 0.1); display: block;">Játkosok <span id="playerCount">Loading...</span> / <span id="maxPlayers">Loading...</span></span>
+                        style="text-shadow: 1px 1px 30px , 1px 1px 20px rgba(183, 135, 0, 0.1), 1px 1px 20px rgba(183, 135, 0, 0.1); display: block;">Játékosok <span id="playerCount">Loading...</span> / <span id="maxPlayers">Loading...</span></span>
                   </div>
                </div>
             </div>
@@ -669,6 +669,7 @@
          document.getElementById('playerCount').innerText = data.playerCount;
          document.getElementById('maxPlayers').innerText = data.maxPlayers;
       } catch (error) {
+         console.error('Error fetching status:', error);
          document.getElementById('playerCount').innerText = 'Error fetching status';
          document.getElementById('maxPlayers').innerText = 'Error fetching status';
       }
