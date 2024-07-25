@@ -1,0 +1,21 @@
+{
+  "name": "fivem_statusz",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "mocha": "^10.7.0",
+    "supertest": "^7.0.0"
+  }
+}
